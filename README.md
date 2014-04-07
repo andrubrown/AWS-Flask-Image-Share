@@ -34,7 +34,8 @@ Or use the web interface https://console.aws.amazon.com/elasticbeanstalk/home
 
 ```
 git clone https://github.com/daeyun/AWS-Flask-Image-Share.git
-cd AWS-Flask-Image-Share```
+cd AWS-Flask-Image-Share
+```
 
 #### Making sure you don't accidentally commit config.py
 
@@ -63,9 +64,13 @@ eb status --verbose
 
 ## Update Application
 
-```git add .
-git commit -m "Update app"```
+```
+git add .
+git commit -m "Update app"
+```
 
 ### Deploy
 
+```
 git aws.push
+```
