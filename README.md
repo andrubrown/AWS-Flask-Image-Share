@@ -36,12 +36,23 @@ Or use the web interface https://console.aws.amazon.com/elasticbeanstalk/home
 ```
 git clone https://github.com/daeyun/AWS-Flask-Image-Share.git
 cd AWS-Flask-Image-Share
+git add .
 ```
 
 #### Making sure you don't accidentally commit config.py
 
 ```
 git update-index --no-assume-unchanged config.py
+```
+
+## Configure the App
+
+Create and enter your AWS security credentials in config.py. https://console.aws.amazon.com/iam/home?#security_credential
+Change the following lines.
+
+```
+AWS_ACCESS_KEY_ID = 'your aws access key id'
+AWS_SECRET_ACCESS_KEY = 'your aws secret access key'
 ```
 
 ## Configure AWS Elastic Beanstalk
@@ -65,10 +76,17 @@ eb status --verbose
 ```
 
 
-## Update Application
+## Update Application before Deploying into Production
+
+In application.py, change the USE_S3 variable to True, and remove the following line:
 
 ```
-git add .
+application.debug = True
+```
+
+Commit
+
+```
 git commit -m "Update app"
 ```
 
@@ -77,3 +95,5 @@ git commit -m "Update app"
 ```
 git aws.push
 ```
+
+You can also use https://console.aws.amazon.com/elasticbeanstalk
