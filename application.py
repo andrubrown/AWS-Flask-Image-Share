@@ -13,13 +13,14 @@ from helpers.file_upload_helper import is_file_allowed, get_image_filename
 from helpers.submission_helper import get_random_url_string
 from helpers.aws_helper import query_dynamodb_album, save_to_dynamodb, upload_to_s3
 
-USE_S3 = True
+USE_S3 = False
 
 application = flask.Flask(__name__)
 upload_dir = 'user_img'
 application.config['LOCAL_UPLOAD_FOLDER'] = upload_dir
 application.config['S3_UPLOAD_FOLDER'] = upload_dir
 application.config['Photo_Album_Table'] = config.AWS_DYNAMO_TABLE
+
 application.debug = True
 
 aws_key_id = config.AWS_ACCESS_KEY_ID
