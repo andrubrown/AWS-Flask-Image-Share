@@ -1,0 +1,4 @@
+.elasticbeanstalk/
+venv
+*.pyc
+.DS_Store

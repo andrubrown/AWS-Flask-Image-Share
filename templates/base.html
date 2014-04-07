@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Simple Image Sharer">
+<meta name="author" content="Daeyun Shin">
+<title>Simple Image Sharer</title>
+<!-- Bootstrap -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        {% if active_page == "main" %}
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        {% elif active_page == "album" %}
+        <div class = "pull-right">
+            <h5 >
+                Album ID:
+                <small>{{ album_id }}</small>,
+                {{image_urls|length}} image(s)
+            </h5>
+        </div>
+        {% endif %}
+        <h3 class="text-muted">Simple Image Sharer</h3>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <div class="footer">
+        <p>&copy; Simple Image Sharer 2014</p>
+    </div>
+</div> <!-- /container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

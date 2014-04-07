@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set active_page = "main" %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>Upload Images</h1>
+        <p class="lead">Create an album and share with your friends.</p>
+
+
+        <form id="upload-form" class="form-inline" role="form" method="POST" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-primary btn-lg btn-file">
+                            Browse&hellip; <input type="file" name="images" multiple>
+                        </span>
+                    </span>
+                    <input type="text" class="input-lg form-control" readonly>
+                    <button type="submit" class="btn-lg btn btn-success btn-submit">Upload</button>
+                </div>
+        </form>
+
+        <span class="help-block">
+            Select one or more files
+        </span>
+    </div>
+
+{% endblock %}

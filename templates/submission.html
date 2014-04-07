@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% set active_page = "submission" %}
+{% block content %}
+    {% if submission_result == "success" %}
+    <h2>Album URL: <a href="{{ album_url }}">{{ album_url }}</a> </h2>
+    {% else %}
+    Error :(
+    {% endif %}
+{% endblock %}

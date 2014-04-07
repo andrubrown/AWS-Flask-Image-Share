@@ -1,0 +1,8 @@
+Flask==0.10.1
+Flask-S3==0.1.6
+Jinja2==2.7.2
+MarkupSafe==0.19
+Werkzeug==0.9.4
+boto==2.27.0
+itsdangerous==0.24
+wsgiref==0.1.2
