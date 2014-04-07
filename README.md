@@ -35,7 +35,7 @@ Or use the web interface https://console.aws.amazon.com/elasticbeanstalk/home
 
 ## Clone this repository
 
-Location doesn't matter. For example, `mkdir ~/flask_apps && cd flask_apps`
+Location doesn't matter. For example, `mkdir ~/flask_apps && cd ~flask_apps`
 
 ```
 git clone https://github.com/daeyun/AWS-Flask-Image-Share.git
