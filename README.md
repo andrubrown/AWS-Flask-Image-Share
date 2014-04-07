@@ -78,7 +78,8 @@ eb status --verbose
 
 ## Update Application before Deploying into Production
 
-In application.py, change the USE_S3 variable to True, and remove the following line:
+In application.py, change the USE_S3 variable to True.
+And remove the following line:
 
 ```
 application.debug = True
