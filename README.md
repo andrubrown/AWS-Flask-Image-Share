@@ -28,14 +28,14 @@ export PATH=$PATH:~/aws-tools/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7
 ####Windows
 
 See http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Python_flask.html
+
 Or use the web interface https://console.aws.amazon.com/elasticbeanstalk/home
 
 ## Clone this repository
 
 ```
 git clone https://github.com/daeyun/AWS-Flask-Image-Share.git
-cd AWS-Flask-Image-Share
-```
+cd AWS-Flask-Image-Share```
 
 #### Making sure you don't accidentally commit config.py
 
@@ -64,13 +64,9 @@ eb status --verbose
 
 ## Update Application
 
-```
-git add .
-git commit -m "Update app"
-```
+```git add .
+git commit -m "Update app"```
 
 ### Deploy
 
-```
 git aws.push
-```
