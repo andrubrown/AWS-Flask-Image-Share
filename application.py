@@ -19,7 +19,7 @@ application = flask.Flask(__name__)
 upload_dir = 'user_img'
 application.config['LOCAL_UPLOAD_FOLDER'] = upload_dir
 application.config['S3_UPLOAD_FOLDER'] = upload_dir
-application.config['Photo_Album_Table'] = config.AWS_DYNAMO_TABLE
+#application.config['Photo_Album_Table'] = config.AWS_DYNAMO_TABLE
 
 aws_key_id = config.AWS_ACCESS_KEY_ID
 aws_access_key = config.AWS_SECRET_ACCESS_KEY
