@@ -9,6 +9,7 @@ An image sharing app deployed on AWS Elastic Beanstalk
 
 ```
 mkdir ~/aws-tools
+cd ~/aws-tools
 wget https://s3.amazonaws.com/elasticbeanstalk/cli/AWS-ElasticBeanstalk-CLI-2.6.0.zip
 unzip AWS-ElasticBeanstalk-CLI-2.6.0.zip
 rm AWS-ElasticBeanstalk-CLI-2.6.0.zip
@@ -19,6 +20,7 @@ export PATH=$PATH:~/aws-tools/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7/
 
 ```
 mkdir ~/aws-tools
+cd ~/aws-tools
 wget https://s3.amazonaws.com/elasticbeanstalk/cli/AWS-ElasticBeanstalk-CLI-2.6.0.zip
 unzip AWS-ElasticBeanstalk-CLI-2.6.0.zip
 rm AWS-ElasticBeanstalk-CLI-2.6.0.zip
