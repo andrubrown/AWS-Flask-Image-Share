@@ -92,7 +92,7 @@ application.debug = True
 Commit
 
 ```
-git commit -m "Disable debugging and turn on S3"
+git commit -am "Disable debugging and turn on S3"
 ```
 
 ### Deploy
