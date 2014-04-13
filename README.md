@@ -3,6 +3,8 @@ AWS-Flask-Image-Share
 
 An image sharing app deployed on AWS Elastic Beanstalk
 
+![Simple Image Sharer Screenshot](./docs/img/screenshot.png)
+
 ## Install AWS Elastic Beanstalk
 
 ####Linux
