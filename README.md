@@ -46,7 +46,7 @@ git add .
 #### Making sure you don't accidentally commit config.py
 
 ```
-git update-index --no-assume-unchanged config.py
+git update-index --assume-unchanged config.py
 ```
 
 ## Configure the App
@@ -92,7 +92,7 @@ application.debug = True
 Commit
 
 ```
-git commit -m "Update app"
+git commit -am "Disable debugging and turn on S3"
 ```
 
 ### Deploy
